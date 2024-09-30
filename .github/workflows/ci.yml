@@ -1,5 +1,12 @@
 name: Continuous Integration
 
+# this is trigger CI on push and PR for main branch only
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
 # this is trigger CI on all kinds of branches and PRs
 on:
   push:
@@ -12,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Fetch all history for all branches and tags
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
