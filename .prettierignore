@@ -3,3 +3,4 @@
 
 # Ignore specific files:
 pnpm-lock.yaml
+yarn.lock
