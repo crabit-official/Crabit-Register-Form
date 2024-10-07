@@ -1,12 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { FcGoogle } from 'react-icons/fc';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 import Heading from '@/app/components/ui/heading';
 import Input from '@/app/components/ui/input';
-import Button from '@/app/components/ui/button';
 import Modal from '@/app/components/ui/modal';
 
 import useRegisterModal from '@/app/hooks/use-register-modal';
@@ -28,7 +26,7 @@ const RegisterModal = () => {
     },
   });
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+  const onSubmit: SubmitHandler<FieldValues> = () => {
     setIsLoading(true);
     // 데이터 요청, 성공시 registerModal.onClose
     // onSettled setIsLoading(false);

@@ -5,7 +5,7 @@ import { IconType } from 'react-icons';
 
 interface IModalButtonProps extends React.HTMLProps<HTMLButtonElement> {
   label: string;
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: () => void;
   disabled?: boolean;
   outline?: boolean;
   small?: boolean;
