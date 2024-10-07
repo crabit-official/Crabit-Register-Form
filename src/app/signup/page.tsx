@@ -15,7 +15,7 @@ export default function Home() {
           />
         </div>
         <section className="w-full text-center text-[20px] font-medium text-white">
-          <h3>로그인 후 크래빗을 사용해보세요!</h3>
+          <h3>사전 예약 후 크래빗을 사용해보세요!</h3>
           <p className="mb-[30px] flex items-center justify-center">
             <h3 className="text-[#E1607E]">크래빗 서비스</h3>
             <strong className="ml-2">사전예약!</strong>
